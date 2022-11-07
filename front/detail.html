@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/detail.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../detail.js"></script>
+    <script src="../index.js"></script>
     <title>Document</title>
     <style>
       @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
@@ -103,11 +105,13 @@
 
       .banner .bg {
         position: absolute;
-        top: 0;
+        top: 15%;
         left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 30%;
+
       }
 
       .content {
@@ -119,6 +123,8 @@
       .movieTitle {
         max-width: 250px;
       }
+  
+  
 
       .banner .content h4 {
         color: rgba(255, 255, 255, 0.5);
@@ -237,6 +243,42 @@
         max-width: 32px;
       }
 
+
+      .post_title{
+        color: white;
+        font-size: 30pt;
+      }
+
+      .banner_box{
+        padding-top: 30%;
+      }
+
+      .review{
+        position: absolute;
+        width: 500px;
+        top: 25%;
+        left: 140%;
+        color: white;
+      }
+      .review h2{
+        font-size: 35pt;
+      }
+
+      .review p{
+
+       font-size: 25pt;
+      }
+
+      .review .dot{
+        font-size: 10pt;
+        text-decoration: underline;
+      }
+
+      .review .dot:hover{
+        color: rgb(130, 130, 130);
+      }
+
+
       @media (max-width: 1024px) {
         .navigation li {
           margin: 0 4px;
@@ -294,6 +336,7 @@
         }
         .banner {
           padding: 220px 20px 120px;
+          
         }
         .banner .play {
           left: 20px;
@@ -313,15 +356,13 @@
     />
 
     <header>
-      <a href="#" class="logo"
-        ><img src="https://i.imgur.com/w1Pnays.png" alt="logo"
+      <a href="index.html" class="logo"
+        ><img src="/NECKSLICE.png" alt="logo"
       /></a>
       <ul class="navigation">
         <li><a href="#">Home</a></li>
         <li><a href="#">TV Shows</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">Latest</a></li>
-        <li><a href="#">My List</a></li>
+
       </ul>
       <div class="search">
         <input type="text" placeholder="Search" />
@@ -329,29 +370,39 @@
       </div>
     </header>
     <div class="banner">
-      <img src="https://i.imgur.com/7bdh8bG.jpg" class="bg" alt="bg img" />
+      <img src="https://play-lh.googleusercontent.com/proxy/gaW9OtMQBtRfRQE--MIEe_XHROYhh63XayqvFp8kbwGxK3i88F7pJ-4l6AnSXneKK2frcmJ3TXwvflwwNHZmlb-GrY4Vs3C-ZPimdrn5twBXYj5cwQ=s1920-w1920-h1080" class="bg" alt="bg img" />
       <div class="content">
+        <div class="banner_box">
         <img
-          src="https://i.imgur.com/HMPK6ev.png"
+          src="/Lord_of_the_Rings.jpg"
           alt="movie name"
           class="movieTitle"
         />
-        <h4>
-          <span>2020</span>
-          <span><i>+13</i></span>
-          <span>1h 55min</span>
-          <span>Action</span>
-        </h4>
-        <p id = "overrview"> </p> 
-        <div class="buttons">
-          <a href="#"><i class="fa-solid fa-play"></i> Play</a>
-          <a href="#"><i class="fa-solid fa-plus"></i> My List</a>
-        </div>
+  
+        <h1 class="post_title">반지의 제왕 : 두개의 탑</h1>
+        <p>9명의 반지원정대는 사우론의 세력에 맞서 반지를 지켜냈지만 반지 원정대는 뿔뿔이 흩어지게 된다. 메리와 피핀을 구하기 위해 우르크하이 군대를 추격하던 아라곤과 레골라스, 김리는 유령 숲에서 백색의 마법사로 부활한 마법사 간달프를 만나게 되고 ... </p> 
       </div>
-      <a class="play"
-        ><img src="https://i.imgur.com/vcvm7c8.png" alt="play" />Watch
-        Trailer</a
-      >
+        <h4>
+          <span>2002.12.19</span>
+          <span><i>+13</i></span>
+          <span>3h 55min</span>
+          <span>Action , Adventure</span>
+        </h4>
+
+        <div class="review">
+          <h1>리뷰(1,423)</h1>
+          <p>nigamonde : 존잼 키키 장수 돌침대</p>
+          <p>json123 : 정말 정말 재밌습니당</p>
+          <p>somin : 너무 길어서 지루해여</p>
+          <p>골름34 : 골룸의 연기가 정말 기가막혀요</p>
+          <p>legol : 레골라스 마지막에 죽어요 ㅅㄱ</p>
+          <p class="dot">더보기</p>
+        </div>
+        
+     
+      </div>
+ 
+      
     </div>
 
     <div class="trailer">
@@ -361,28 +412,7 @@
       ></video>
       <img src="https://i.imgur.com/yzr8fQz.png" alt="close" class="close" />
     </div>
-    <form>
-      <div id="comment_section">
-        <div class="mb-3">
-          <input
-            class="content"
-            type="text"
-            name="content"
-            id="comment_content"
-            required="true"
-          />
-          <label class="form-label">댓글 내용</label>
-        </div>
-        <button
-          type="button"
-          onclick="postComment()"
-          class="btn btn-outline-primary btn-sm"
-          id="comment_button"
-        >
-          댓글 작성
-        </button>
-      </div>
-    </form>
+
 
     <script>
       let $ = document;
