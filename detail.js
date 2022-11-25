@@ -17,17 +17,17 @@ xhr.onload = () => {
   }
 };
 
-/* window.onload = () => {
+window.onload = () => {
   console.log("로딩되었음");
 };
 
-app.get("http://127.0.0.1:8000/movie/1/`${movie_pk}`", (request, response) => {
+app.get("http://127.0.0.1:8000/movie/`${movie_pk}`", (request, response) => {
   const movie = movies.find((movie) => movie.id === Number(request.params.id));
   if (!movie) {
     return res.status(404).send("영화 정보를 찾을 수 없습니다");
   }
   res.status(200).send(movie);
-}); */
+});
 
 async function postComment() {
   const comment_content = document.getElementById("comment_content");
@@ -53,12 +53,11 @@ async function postComment() {
 
 
 //     })
-/* frontend_base_url = `http://127.0.0.1:5500/front`
 
 
     function articleDetail(movie_id){
         console.log(movie_id)
         const url = `${frontend_base_url}/detail.html?id=${movie_id}`
-        location.href = url
-    } */
+        location.href= url
+    }
 

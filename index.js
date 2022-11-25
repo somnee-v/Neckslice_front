@@ -34,32 +34,22 @@ $(document).ready(function () {
     for (let i = 0; i < 6; i++) {
       let title = article[i]["title"];
       let image_url = article[i]["poster_path"];
-      let movie_id = article[i]["id"];
 
-      let element_card = document.createElement("div"); 
-        element_card.setAttribute("class", "card");
-      
+      let temp_html = `<div class="card">
+                            <a href = '#'>
+                            <img
+                                class="card-img-top"
+                                src="https://image.tmdb.org/t/p/w200${image_url}"
+                                alt="${title}"/>
+                                </a>
 
-      let link = document.createElement("a");
-        // link.setAttribute("href", "여기에 주소 넣으세요");
-      let img = document.createElement("img");
-        img.setAttribute("class", "card-img-top");
-        let img_src = "https://image.tmdb.org/t/p/w200" + image_url;
-        img.setAttribute("src", img_src);
-        img.setAttribute("alt", title);
-      link.appendChild(img);
-      
-      let element_card_body = document.createElement("div");
-        element_card_body.setAttribute("class", "card_body");
-        let card_body_title = document.createTextNode(title);
-      element_card_body.appendChild(card_body_title);
-      
+                            <div class="card-body">
+                                  
+                                  ${title}
+                            </div>
+                        </div>`;
 
-      element_card.appendChild(link);
-      element_card.appendChild(element_card_body);
-      $("#cards-boxss").append(element_card);
-
-      element_card.setAttribute("onclick", "articleDetail(this.id)");
+      $("#cards-boxss").append(temp_html);
     }
   },
   });
@@ -76,32 +66,22 @@ $(document).ready(function () {
     for (let i = 0; i < 6; i++) {
       let title = article[i]["title"];
       let image_url = article[i]["poster_path"];
-      let movie_id = article[i]["id"];
 
-      let element_card = document.createElement("div"); 
-        element_card.setAttribute("class", "card");
-      
+      let temp_html = `<div class="card">
+                            <a href = '#'>
+                            <img
+                                class="card-img-top"
+                                src="https://image.tmdb.org/t/p/w200${image_url}"
+                                alt="${title}"/>
+                                </a>
 
-      let link = document.createElement("a");
-        // link.setAttribute("href", "여기에 주소 넣으세요");
-      let img = document.createElement("img");
-        img.setAttribute("class", "card-img-top");
-        let img_src = "https://image.tmdb.org/t/p/w200" + image_url;
-        img.setAttribute("src", img_src);
-        img.setAttribute("alt", title);
-      link.appendChild(img);
-      
-      let element_card_body = document.createElement("div");
-        element_card_body.setAttribute("class", "card_body");
-        let card_body_title = document.createTextNode(title);
-      element_card_body.appendChild(card_body_title);
-      
+                            <div class="card-body">
+                                  
+                                  ${title}
+                            </div>
+                        </div>`;
 
-      element_card.appendChild(link);
-      element_card.appendChild(element_card_body);
-      $("#cards-ad").append(element_card);
-
-      element_card.setAttribute("onclick", "articleDetail(this.id)");
+      $("#cards-ad").append(temp_html);
     }
   },
   });
@@ -120,32 +100,22 @@ $(document).ready(function () {
     for (let i = 0; i < 6; i++) {
       let title = article[i]["title"];
       let image_url = article[i]["poster_path"];
-      let movie_id = article[i]["id"];
 
-      let element_card = document.createElement("div"); 
-        element_card.setAttribute("class", "card");
-      
+      let temp_html = `<div class="card">
+                            <a href = '#'>
+                            <img
+                                class="card-img-top"
+                                src="https://image.tmdb.org/t/p/w200${image_url}"
+                                alt="${title}"/>
+                                </a>
 
-      let link = document.createElement("a");
-        // link.setAttribute("href", "여기에 주소 넣으세요");
-      let img = document.createElement("img");
-        img.setAttribute("class", "card-img-top");
-        let img_src = "https://image.tmdb.org/t/p/w200" + image_url;
-        img.setAttribute("src", img_src);
-        img.setAttribute("alt", title);
-      link.appendChild(img);
-      
-      let element_card_body = document.createElement("div");
-        element_card_body.setAttribute("class", "card_body");
-        let card_body_title = document.createTextNode(title);
-      element_card_body.appendChild(card_body_title);
-      
+                            <div class="card-body">
+                                  
+                                  ${title}
+                            </div>
+                        </div>`;
 
-      element_card.appendChild(link);
-      element_card.appendChild(element_card_body);
-      $("#cards-action").append(element_card);
-
-      element_card.setAttribute("onclick", "articleDetail(this.id)");
+      $("#cards-action").append(temp_html);
     }
   },
   });
@@ -164,45 +134,23 @@ $(document).ready(function () {
     for (let i = 0; i < 6; i++) {
       let title = article[i]["title"];
       let image_url = article[i]["poster_path"];
-      let movie_id = article[i]["id"];
 
-      let element_card = document.createElement("div"); 
-        element_card.setAttribute("class", "card");
-      
+      let temp_html = `<div class="card">
+                            <a href = '#'>
+                            <img
+                                class="card-img-top"
+                                src="https://image.tmdb.org/t/p/w200${image_url}"
+                                alt="${title}"/>
+                                </a>
 
-      let link = document.createElement("a");
-        // link.setAttribute("href", "여기에 주소 넣으세요");
-      let img = document.createElement("img");
-        img.setAttribute("class", "card-img-top");
-        let img_src = "https://image.tmdb.org/t/p/w200" + image_url;
-        img.setAttribute("src", img_src);
-        img.setAttribute("alt", title);
-      link.appendChild(img);
-      
-      let element_card_body = document.createElement("div");
-        element_card_body.setAttribute("class", "card_body");
-        let card_body_title = document.createTextNode(title);
-      element_card_body.appendChild(card_body_title);
-      
+                            <div class="card-body">
+                                  
+                                  ${title}
+                            </div>
+                        </div>`;
 
-      element_card.appendChild(link);
-      element_card.appendChild(element_card_body);
-      $("#love_").append(element_card);
-
-      element_card.setAttribute("onclick", "articleDetail(this.id)");
+      $("#love_").append(temp_html);
     }
   },
   });
 });
-
-
-frontend_base_url = `http://127.0.0.1:5500/front`
-
-
-    function articleDetail(movie_id){
-        console.log(movie_id)
-        const url = `${frontend_base_url}/detail.html?id=${movie_id}`
-        location.href = url
-    }
-
-
